@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Demo</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="d-flex container justify-content-center align-items-center">
+    <div class="lhs">
+      <h2 class="mb-4">Search any word</h2>
+      <form>
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" id="input">
+          </div>
+        </div>
+        <input type="submit" class="btn btn-primary" id="submit"></input>
+      </form>
+    </div>
+
+    <div class="rhs d-none">
+      <div class='info'>
+        <h4>Is it an English word?</h4>
+        <p id='english'></p>
+      </div>
+      <div class='info'>
+        <h4>How long is the word?</h4>
+        <span id='length'></span>
+        <span>letters long</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="lib/index.js"></script>
+</body>
+</html>
